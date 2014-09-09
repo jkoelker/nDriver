@@ -9,7 +9,6 @@
 
 
 uint8_t tcnt2 = 130;
-uint8_t led_state = 0;
 uint8_t count = 0;
 volatile uint8_t enable = 0;
 volatile uint8_t step = 0;

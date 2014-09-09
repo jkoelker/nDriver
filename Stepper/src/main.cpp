@@ -49,11 +49,10 @@ void loop() {
         enable = 0;
     }
 
-    if (step && !led_state) {
-        led_state = 1;
+    if (step) {
         digitalWrite(CONFIG_LED_PIN, HIGH);
-    } else if (!step & led_state) {
-        led_state = 0;
+
+    } else if (!step) {
         digitalWrite(CONFIG_LED_PIN, LOW);
     }
 }
